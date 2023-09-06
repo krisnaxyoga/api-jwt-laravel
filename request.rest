@@ -1,0 +1,48 @@
+POST http://localhost:8776/api/register
+Content-Type: application/json
+
+{
+    "name":"jhon21",
+    "email":"admin21@gmail.com",
+    "password":"password",
+    "password_confirmation":"password"
+}
+###
+
+POST http://localhost:8776/api/login
+Content-Type: application/json
+
+{
+    "email" : "admin2@gmail.com",
+    "password" : "password"
+}
+
+###
+GET http://localhost:8776/api/userdata
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0Ojg3NzYvYXBpL2xvZ2luIiwiaWF0IjoxNjkzOTAwOTI4LCJleHAiOjE2OTM5MDQ1MjgsIm5iZiI6MTY5MzkwMDkyOCwianRpIjoiNFFzSTBUQ0p0UUNlczFNaCIsInN1YiI6IjIiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.ZGV_jqiWN37iwpSlH_oXU-H_mdae0YvDURxrCCnOg8g
+
+###
+GET http://localhost:8776/api/user
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0Ojg3NzYvYXBpL2xvZ2luIiwiaWF0IjoxNjkzOTAwOTI4LCJleHAiOjE2OTM5MDQ1MjgsIm5iZiI6MTY5MzkwMDkyOCwianRpIjoiNFFzSTBUQ0p0UUNlczFNaCIsInN1YiI6IjIiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.ZGV_jqiWN37iwpSlH_oXU-H_mdae0YvDURxrCCnOg8g
+
+###
+GET http://localhost:8776/api/post
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0Ojg3NzYvYXBpL2xvZ2luIiwiaWF0IjoxNjkzOTAwOTI4LCJleHAiOjE2OTM5MDQ1MjgsIm5iZiI6MTY5MzkwMDkyOCwianRpIjoiNFFzSTBUQ0p0UUNlczFNaCIsInN1YiI6IjIiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.ZGV_jqiWN37iwpSlH_oXU-H_mdae0YvDURxrCCnOg8g
+
+###
+POST http://localhost:8776/api/post/store
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0Ojg3NzYvYXBpL2xvZ2luIiwiaWF0IjoxNjkzOTAwOTI4LCJleHAiOjE2OTM5MDQ1MjgsIm5iZiI6MTY5MzkwMDkyOCwianRpIjoiNFFzSTBUQ0p0UUNlczFNaCIsInN1YiI6IjIiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.ZGV_jqiWN37iwpSlH_oXU-H_mdae0YvDURxrCCnOg8g
+
+{
+    "image":"",
+    "title":"tess",
+    "content":"tess"
+}
