@@ -37,7 +37,7 @@ class PostController extends Controller
     {
           //define validation rules
         $validator = Validator::make($request->all(), [
-            'image'     => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'image'     => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:8048',
             'title'     => 'required',
             'content'   => 'required',
         ]);
@@ -53,7 +53,7 @@ class PostController extends Controller
 
         //create post
         $post = Post::create([
-            'image'     => $image->hashName(),
+            'image'     => 'public/posts/'.$image->hashName(),
             'title'     => $request->title,
             'content'   => $request->content,
         ]);
