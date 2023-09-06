@@ -40,7 +40,7 @@ Route::middleware(['auth:api'])->group(function () {
 
     Route::get('/userdata', App\Http\Controllers\Api\UserController::class)->name('userdata');
     // Gantilah 'UserController::class' dengan controller dan metode yang sesuai untuk route '/userdata'
-    
+
     // Anda dapat menambahkan route lain yang memerlukan autentikasi di sini
 
     Route::get('/post', [App\Http\Controllers\Api\Post\PostController::class,'index'])->name('post.index');
@@ -48,6 +48,9 @@ Route::middleware(['auth:api'])->group(function () {
 });
 
 
-// Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-//     return $request->user();
-// });
+
+/**
+ * route "/logout"
+ * @method "POST"
+ */
+Route::post('/logout', App\Http\Controllers\Api\LogOutController::class)->name('logout');

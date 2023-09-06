@@ -14,7 +14,7 @@ class PostResource extends JsonResource
      */
     public $status;
     public $message;
-    
+
     /**
      * __construct
      *
@@ -41,7 +41,8 @@ class PostResource extends JsonResource
         return [
             'success'   => $this->status,
             'message'   => $this->message,
-            'data'      => $this->resource
+            'data'      => $this->resource,
+            'user'      => auth()->user(),
         ];
     }
 }
