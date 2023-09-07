@@ -15,7 +15,7 @@ class Post extends Model
     protected function image(): Attribute
     {
         return Attribute::make(
-            get: fn ($image) => asset('/' . $image),
+            get: fn ($image) => asset('/storage/posts/' . $image),
         );
     }
 }

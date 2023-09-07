@@ -45,6 +45,9 @@ Route::middleware(['auth:api'])->group(function () {
 
     Route::get('/post', [App\Http\Controllers\Api\Post\PostController::class,'index'])->name('post.index');
     Route::post('/post/store', [App\Http\Controllers\Api\Post\PostController::class,'store'])->name('post.store');
+    Route::get('/post/show/{id}', [App\Http\Controllers\Api\Post\PostController::class,'show'])->name('post.show');
+    Route::post('/post/update/{id}', [App\Http\Controllers\Api\Post\PostController::class,'update'])->name('post.update');
+    Route::get('/post/destroy/{id}', [App\Http\Controllers\Api\Post\PostController::class,'destroy'])->name('post.destroy');
 });
 
 
